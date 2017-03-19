@@ -35,37 +35,47 @@ section {
     padding: 40px 60px;
 }
 
+
 /* General styles - stop */
 
+
 /* Main menu styles - start */
+
 #main-nav {
     background-color: #fff;
     position: fixed;
     z-index: 12;
     width: 100%;
 }
+
 #main-nav ul {
     margin: 0;
     text-align: right;
 }
+
 #main-nav ul .menu-item {
     display: inline-block;
     padding: 20px;
     color: #1ac056;
     text-decoration: none;
 }
+
 #main-nav ul .menu-item a {
     color: #1ac056;
     text-decoration: none;
     transition: all .3s;
 }
+
 #main-nav ul .menu-item a:hover {
     color: #000;
 }
 
+
 /* Main menu styles - stop */
 
+
 /* Main header styles  start */
+
 #main-header {
     background-position: center;
     background-size: cover;
@@ -74,6 +84,7 @@ section {
     height: 100vh;
     position: relative;
 }
+
 #main-header .header-caption {
     position: absolute;
     top: 50%;
@@ -84,87 +95,131 @@ section {
     color: #fff;
     font-family: 'Roboto', sans-serif
 }
+
 #main-header .header-caption h1 {
     font-size: 4em;
     font-weight: 300;
 }
+
 #main-header .header-caption h2 {
     font-size: 3em;
     font-weight: 300;
 }
 
+
 /* Main header styles  stop */
 
+
 /* About section styles - start */
+
 #about {
     height: 100vh;
     display: inline-block;
     background-color: #f9fcfe;
     position: relative;
 }
+
 #about figure {
     text-align: center;
     margin: 0;
 }
+
 #about figure .about-img {
     max-height: 350px;
     border: 10px solid #fff;
     border-radius: 10px;
 }
+
 #about p:first-child {
     margin-top: 0;
 }
 
+
 /* About section styles - stop */
 
+
 /* Skills section - start */
+
 #skills {
-     -webkit-box-shadow: inset 0px 6px 10px -2px rgba(0, 0, 0, 0.52);
+    -webkit-box-shadow: inset 0px 6px 10px -2px rgba(0, 0, 0, 0.52);
     -moz-box-shadow: inset 0px 6px 10px -2px rgba(0, 0, 0, 0.52);
     box-shadow: inset 0px 6px 10px -2px rgba(0, 0, 0, 0.52);
 }
-#skills > p{
-    text-align: center; 
+
+#skills>p {
+    text-align: center;
 }
-#skills .skills-icons{
+
+#skills .skills-icons {
     margin-top: 20px;
     text-align: center;
-    
 }
-#skills .skills-icons figure{
+
+#skills .skills-icons figure {
     display: inline-block;
 }
-#skills .skills-icons figure figcaption{
+
+#skills .skills-icons figure figcaption {
     margin-top: 10px;
-    
 }
+
+
 /* Skills section - stop */
+
 
 /* Portfolio section - start */
 
-#portfolio .portfolio-items{
+#portfolio .portfolio-items {
     font-size: 0;
     text-align: center;
 }
-#portfolio .portfolio-item{
+
+#portfolio .portfolio-item {
     height: 350px;
     width: 33%;
     display: inline-block;
     font-size: initial;
     background-size: cover;
     background-position: center;
+    position: relative;
+    color: #fff;
     /* jak obejść białe paski pomiędzy elementami?
     1- usunąć puste znaki (niezalecane)
     2- google > remove white spaces inline-block - reset wielkości fonta: dla parenta - font-size: 0, dla childa font-size: initial
     */
 }
-#portfolio-item-1{
+#portfolio .portfolio-item .portfolio-item-mask {
+    background-color: rgba(33, 59, 80, 0.8);
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    transition: all .3s;
+    
+}
+#portfolio .portfolio-item .portfolio-item-mask:hover {
+    opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-item-mask .portfolio-content{
+    border: 1px solid #fff;
+    width: 95%;
+    height: 95%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+}
+#portfolio-item-1 {
     background-image: url(../img/img/portfolio1.jpg)
 }
-#portfolio-item-2{
+
+#portfolio-item-2 {
     background-image: url(../img/img/portfolio2.jpg)
 }
-#portfolio-item-3{
+
+#portfolio-item-3 {
     background-image: url(../img/img/portfolio4.jpg)
 }
+
+
 /* Portfolio section - stop */
