@@ -5,24 +5,31 @@
     <meta charset="UTF-8">
     <title>Moje portfolio</title>
 
-    <!-- Main style sheet -->
-    <link rel="stylesheet" href="css/style.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400|Roboto:100,200,300,400" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Zewnętrzne style podpinamy przed wląsnoręczne stworzonymi-->
+
+    <!-- Main style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
     <!--menu głowne start-->
     <nav id="main-nav">
+       <label for="drop">Menu</label>
+       <input type="checkbox" id="drop">
         <ul>
             <li class="menu-item"><a href="#about">O mnie</a></li>
             <li class="menu-item"><a href="#skills">Moje umiejętności</a></li>
             <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
             <li class="menu-item"><a href="#contact">Kontakt</a></li>
-
         </ul>
     </nav>
+    
     <!--menu glówne stop-->
 
     <!--header start -->
@@ -60,7 +67,7 @@
 
         <h2>Moje <span>umiejętności</span></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium praesentium fugiat minima perferendis illum assumenda, quasi ducimus aliquid. Ipsum similique consectetur ipsam debitis dolorem temporibus, voluptate expedita incidunt maxime porro!</p>
-        
+
         <div class="skills-icons">
             <figure>
                 <img src="img/icons/html5.png" alt="HTML5">
@@ -83,11 +90,11 @@
     </section>
 
     <!-- Skills section - stop -->
-    
+
     <!-- Portfolio section - start -->
-    
+
     <section id="portfolio">
-        
+
         <h2>Moje <span>portfolio</span></h2>
         <div class="portfolio-items">
             <div class="portfolio-item" id="portfolio-item-1">
@@ -95,25 +102,90 @@
                     <div class="portfolio-content">
                         <div class="portfolio-content-inner">
                             <h3>Lorem ipsum</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam excepturi magni, iste quasi praesentium aut illo inventore.</p>
-                            <h4>Lorem</h4>
+                            <p>Krótki opis.</p>
+                            <h4>Wkorzystane technologie</h4>
                             <p>Html5, CSS, JS, jQuery</p>
+                            <a href=""><i class="fa fa-link fa-2x"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="portfolio-item" id="portfolio-item-2">
-                
+                <div class="portfolio-item-mask">
+                    <div class="portfolio-content">
+                        <div class="portfolio-content-inner">
+                            <h3>Lorem ipsum</h3>
+                            <p>krótki opis</p>
+                            <h4>Wykorzystane technoogie</h4>
+                            <p>Html5, CSS, JS, jQuery</p>
+                            <a href=""><i class="fa fa-link fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="portfolio-item" id="portfolio-item-3">
-                
+                <div class="portfolio-item-mask">
+                    <div class="portfolio-content">
+                        <div class="portfolio-content-inner">
+                            <h3>Lorem ipsum</h3>
+                            <p>Krótki opis</p>
+                            <h4>Wykorzystane technologie</h4>
+                            <p>Html5, CSS, JS, jQuery</p>
+                            <a href=""><i class="fa fa-link fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        
+
     </section>
-    
+
     <!-- Portfolio section - stop -->
-    
+
+    <!-- Contact - start -->
+
+    <section id="contact">
+
+        <div class="col-1-2">
+            <h2>Jan <span>Nowak</span></h2><br>
+            <address>
+               ul.Mostowa 6/13<br>
+               31-061 Kraków<br>
+               <br>
+               tel: 606 74 57 59<br>
+               e-mail: <a href="">example@example.com</a>
+           </address>
+            <div class="social-icons">
+                <a href="" class="fa fa-facebook"></a>
+                <a href="" class="fa fa-google-plus"></a>
+                <a href="" class="fa fa-twitter"></a>
+                <a href="" class="fa fa-linkedin"></a>
+            </div>
+
+        </div>
+        <div class="col-1-2">
+
+            <form method="POST" action="https://formspree.io/michalski.maciej94@gmail.com">
+                <input type="text" placeholder="Imię i Nazwisko">
+                <input type="email" name="_replyto" placeholder="Email">
+                <textarea rows="4" placeholder="Wiadomość"></textarea>
+                <input type="submit" value="Wyślij">
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Contact - stop -->
+
+    <!-- Footer - start -->
+
+    <footer>
+
+        <p>Copyright @ Jan Nowak</p>
+
+    </footer>
+
+    <!-- Footer - stop -->
 </body>
 
 </html>
