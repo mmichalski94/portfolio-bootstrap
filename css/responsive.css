@@ -84,7 +84,7 @@
     #portfolio #portfolio-item-2 {
         width: 50%;
     }
-    #portfolio #portfolio-item-3 {
+    #portfolio #portfolio-item:last-child {
         width: 100%;
     }
 }
