@@ -13,23 +13,48 @@
     <!-- Zewnętrzne style podpinamy przed wląsnoręczne stworzonymi-->
 
     <!-- Main style sheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
     <!--menu głowne start-->
-    <nav id="main-nav">
-       <label for="drop">Menu</label>
-       <input type="checkbox" id="drop">
+    <nav id="main-nav" class="navbar navbar-fixed-top navbar-default">
+        <!--<label for="drop">Menu</label>
+       <input type="checkbox" class="drop">
         <ul>
             <li class="menu-item"><a href="#about">O mnie</a></li>
             <li class="menu-item"><a href="#skills">Moje umiejętności</a></li>
             <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
             <li class="menu-item"><a href="#contact">Kontakt</a></li>
-        </ul>
+        </ul>-->
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="menu-item"><a href="#about">O mnie</a></li>
+                    <li class="menu-item"><a href="#skills">Moje umiejętności</a></li>
+                    <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="menu-item"><a href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
     </nav>
-    
+
     <!--menu glówne stop-->
 
     <!--header start -->
@@ -47,15 +72,24 @@
     <!-- About section start -->
 
     <section id="about">
-        <h2>O <span>mnie</span></h2>
-        <figure class="col-1-2">
-            <img src="img/img/jan-nowak.jpg" class="about-img" alt="Jan Nowak">
-        </figure>
-        <div class="col-1-2">
-            <p class="about-me">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dignissimos dolor maiores quaerat, aliquid adipisci neque eveniet ipsum, hic possimus architecto totam dolorum accusantium, magni, assumenda necessitatibus aperiam accusamus quis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quasi aperiam omnis a voluptatibus, accusamus at ea porro, id sequi eum sit est neque, molestias voluptates minus. Iure, consequuntur, fugit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit incidunt possimus debitis id placeat aliquam dolores, blanditiis! Ullam, illum, ut? Est nemo quidem voluptatem quam, repellendus, beatae pariatur commodi nam.</p>
+        <div class="container">
+            <div class="row">
+                <h2>O <span>mnie</span></h2>
+            </div>
+
+            <div class="row">
+                <figure class="col-sm-6">
+                    <img src="img/img/jan-nowak.jpg" class="about-img" alt="Jan Nowak">
+                </figure>
+                <div class="col-sm-6">
+                    <p class="about-me">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dignissimos dolor maiores quaerat, aliquid adipisci neque eveniet ipsum, hic possimus architecto totam dolorum accusantium, magni, assumenda necessitatibus aperiam accusamus quis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quasi aperiam omnis a voluptatibus, accusamus at ea porro, id sequi eum sit est neque, molestias voluptates minus. Iure, consequuntur, fugit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit incidunt possimus debitis id placeat aliquam dolores, blanditiis! Ullam, illum, ut? Est nemo quidem voluptatem quam, repellendus, beatae pariatur commodi nam.</p>
+                </div>
+            </div>
         </div>
 
 
+
+<!-- CTRL + shift + a - dzięki temu można zaznaczyć część kodu i opakować go w inny element-->
 
     </section>
 
@@ -65,26 +99,32 @@
 
     <section id="skills">
 
-        <h2>Moje <span>umiejętności</span></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium praesentium fugiat minima perferendis illum assumenda, quasi ducimus aliquid. Ipsum similique consectetur ipsam debitis dolorem temporibus, voluptate expedita incidunt maxime porro!</p>
+        <div class="container">
+            <div class="row">
+                <h2>Moje <span>umiejętności</span></h2>
+            </div>
+            <div class="row">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium praesentium fugiat minima perferendis illum assumenda, quasi ducimus aliquid. Ipsum similique consectetur ipsam debitis dolorem temporibus, voluptate expedita incidunt maxime porro!</p>
+            </div>
 
-        <div class="skills-icons">
-            <figure>
-                <img src="img/icons/html5.png" alt="HTML5">
-                <figcaption>HTML5</figcaption>
-            </figure>
-            <figure>
-                <img src="img/icons/css3.png" alt="CSS3">
-                <figcaption>CSS3</figcaption>
-            </figure>
-            <figure>
-                <img src="img/icons/js.png" alt="JavaScript">
-                <figcaption>JavaScript</figcaption>
-            </figure>
-            <figure>
-                <img src="img/icons/jquery.png" alt="jQuery">
-                <figcaption>jQuery</figcaption>
-            </figure>
+            <div class="skills-icons row">
+                <figure>
+                    <img src="img/icons/html5.png" alt="HTML5">
+                    <figcaption>HTML5</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/icons/css3.png" alt="CSS3">
+                    <figcaption>CSS3</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/icons/js.png" alt="JavaScript">
+                    <figcaption>JavaScript</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/icons/jquery.png" alt="jQuery">
+                    <figcaption>jQuery</figcaption>
+                </figure>
+            </div>
         </div>
 
     </section>
@@ -95,49 +135,52 @@
 
     <section id="portfolio">
 
-        <h2>Moje <span>portfolio</span></h2>
-        <div class="portfolio-items">
-            <div class="portfolio-item" id="portfolio-item-1">
-                <div class="portfolio-item-mask">
-                    <div class="portfolio-content">
-                        <div class="portfolio-content-inner">
-                            <h3>Lorem ipsum</h3>
-                            <p>Krótki opis.</p>
-                            <h4>Wkorzystane technologie</h4>
-                            <p>Html5, CSS, JS, jQuery</p>
-                            <a href=""><i class="fa fa-link fa-2x"></i></a>
+        <div class="container">
+           <div class="row">
+                 <h2>Moje <span>portfolio</span></h2>
+            </div>
+            <div class="portfolio-items row">
+                <div class="portfolio-item col-lg-4 col-sm-6" id="portfolio-item-1">
+                    <div class="portfolio-item-mask">
+                        <div class="portfolio-content">
+                            <div class="portfolio-content-inner">
+                                <h3>Lorem ipsum</h3>
+                                <p>Krótki opis.</p>
+                                <h4>Wkorzystane technologie</h4>
+                                <p>Html5, CSS, JS, jQuery</p>
+                                <a href=""><i class="fa fa-link fa-2x"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="portfolio-item" id="portfolio-item-2">
-                <div class="portfolio-item-mask">
-                    <div class="portfolio-content">
-                        <div class="portfolio-content-inner">
-                            <h3>Lorem ipsum</h3>
-                            <p>krótki opis</p>
-                            <h4>Wykorzystane technoogie</h4>
-                            <p>Html5, CSS, JS, jQuery</p>
-                            <a href=""><i class="fa fa-link fa-2x"></i></a>
+                <div class="portfolio-item col-lg-4 col-sm-6" id="portfolio-item-2">
+                    <div class="portfolio-item-mask">
+                        <div class="portfolio-content">
+                            <div class="portfolio-content-inner">
+                                <h3>Lorem ipsum</h3>
+                                <p>krótki opis</p>
+                                <h4>Wykorzystane technoogie</h4>
+                                <p>Html5, CSS, JS, jQuery</p>
+                                <a href=""><i class="fa fa-link fa-2x"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="portfolio-item" id="portfolio-item-3">
-                <div class="portfolio-item-mask">
-                    <div class="portfolio-content">
-                        <div class="portfolio-content-inner">
-                            <h3>Lorem ipsum</h3>
-                            <p>Krótki opis</p>
-                            <h4>Wykorzystane technologie</h4>
-                            <p>Html5, CSS, JS, jQuery</p>
-                            <a href=""><i class="fa fa-link fa-2x"></i></a>
+                <div class="portfolio-item col-lg-4 col-sm-12" id="portfolio-item-3">
+                    <div class="portfolio-item-mask">
+                        <div class="portfolio-content">
+                            <div class="portfolio-content-inner">
+                                <h3>Lorem ipsum</h3>
+                                <p>Krótki opis</p>
+                                <h4>Wykorzystane technologie</h4>
+                                <p>Html5, CSS, JS, jQuery</p>
+                                <a href=""><i class="fa fa-link fa-2x"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
 
     <!-- Portfolio section - stop -->
@@ -146,33 +189,34 @@
 
     <section id="contact">
 
-        <div class="col-1-2">
-            <h2>Jan <span>Nowak</span></h2><br>
-            <address>
-               ul.Mostowa 6/13<br>
-               31-061 Kraków<br>
-               <br>
-               tel: 606 74 57 59<br>
-               e-mail: <a href="">example@example.com</a>
-           </address>
-            <div class="social-icons">
-                <a href="" class="fa fa-facebook"></a>
-                <a href="" class="fa fa-google-plus"></a>
-                <a href="" class="fa fa-twitter"></a>
-                <a href="" class="fa fa-linkedin"></a>
+        <div class="container">
+            <div class="row col-md-6">
+                <h2>Jan <span>Nowak</span></h2><br>
+                <address>
+                   ul.Mostowa 6/13<br>
+                   31-061 Kraków<br>
+                   <br>
+                   tel: 606 74 57 59<br>
+                   e-mail: <a href="">example@example.com</a>
+               </address>
+                <div class="social-icons">
+                    <a href="" class="fa fa-facebook"></a>
+                    <a href="" class="fa fa-google-plus"></a>
+                    <a href="" class="fa fa-twitter"></a>
+                    <a href="" class="fa fa-linkedin"></a>
+                </div>
+
             </div>
+            <div class="row col-md-6">
 
+                <form method="POST" action="https://formspree.io/michalski.maciej94@gmail.com">
+                    <input type="text" placeholder="Imię i Nazwisko">
+                    <input type="email" name="_replyto" placeholder="Email">
+                    <textarea rows="4" placeholder="Wiadomość"></textarea>
+                    <input type="submit" value="Wyślij">
+                </form>
+            </div>
         </div>
-        <div class="col-1-2">
-
-            <form method="POST" action="https://formspree.io/michalski.maciej94@gmail.com">
-                <input type="text" placeholder="Imię i Nazwisko">
-                <input type="email" name="_replyto" placeholder="Email">
-                <textarea rows="4" placeholder="Wiadomość"></textarea>
-                <input type="submit" value="Wyślij">
-            </form>
-        </div>
-
     </section>
 
     <!-- Contact - stop -->
@@ -186,6 +230,13 @@
     </footer>
 
     <!-- Footer - stop -->
+
+    <!--jQuery script-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <!--Bootstrap script-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

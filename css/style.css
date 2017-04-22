@@ -7,6 +7,7 @@
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
+    background-color: transparent;
 }
 
 span {
@@ -19,20 +20,16 @@ p {
     font-weight: 300;
 }
 
-.col-1-2 {
-    width: 50%;
-    float: left;
-}
-
 h2 {
     text-align: center;
     font-weight: 300;
     font-size: 2em;
+    margin-bottom: 30px;
 }
 
 section {
     overflow: auto;
-    padding: 40px 60px;
+    padding: 60px 0;
 }
 
 
@@ -42,37 +39,45 @@ section {
 /* Main menu styles - start */
 
 #main-nav {
-    background-color: #fff;
-    position: fixed;
-    z-index: 12;
-    width: 100%;
-}
-
-#main-nav label, #main-nav #drop{
-    display: none;
+    background-color: transparent;
+    border: none;
 }
 
 #main-nav ul {
-    margin: 0;
     text-align: right;
 }
 
 #main-nav ul .menu-item {
     display: inline-block;
     padding: 20px;
-    color: #1ac056;
     text-decoration: none;
 }
 
 #main-nav ul .menu-item a {
-    color: #1ac056;
+    color: #fff;
     text-decoration: none;
     transition: all .3s;
 }
 
 #main-nav ul .menu-item a:hover {
-    color: #000;
+    color: #1ac056;
 }
+
+
+/* after scroll */
+
+#main-nav.scroll {
+    background-color: #fff;
+}
+
+#main-nav.scroll ul .menu-item a {
+    color: #1ac056;
+}
+
+#main-nav.scroll ul .menu-item a:hover {
+    color: #1a1918;
+}
+
 
 /* Main menu styles - stop */
 
@@ -116,23 +121,24 @@ section {
 /* About section styles - start */
 
 #about {
-    display: inline-block;
     background-color: #f9fcfe;
-    position: relative;
 }
 
-#about figure {
-    text-align: center;
+#about .container .row {
     margin: 0;
 }
 
-#about figure .about-img {
+#about .container .row figure {
+    text-align: center;
+}
+
+#about .container .row figure .about-img {
     max-height: 350px;
     border: 10px solid #fff;
     border-radius: 10px;
 }
 
-#about p:first-child {
+#about .container .row p:first-child {
     margin-top: 0;
 }
 
@@ -157,12 +163,17 @@ section {
     text-align: center;
 }
 
+#skills .container .row {
+    margin: 0;
+}
+
 #skills .skills-icons figure {
     display: inline-block;
 }
 
-#skills .skills-icons figure figcaption {
+#skills .container .skills-icons figure figcaption {
     margin-top: 10px;
+    padding-right: 15px;
 }
 
 
@@ -176,10 +187,12 @@ section {
     text-align: center;
 }
 
+#portfolio .portfolio-items [class*="col-"] {
+    padding: 0;
+}
+
 #portfolio .portfolio-item {
     height: 350px;
-    width: 33%;
-    display: inline-block;
     font-size: initial;
     background-size: cover;
     background-position: center;
@@ -254,7 +267,8 @@ section {
 /* Contact section - start*/
 
 #contact {
-    background-color: #213b50;;
+    background-color: #213b50;
+    ;
     color: #fff;
     text-decoration: none;
     padding: 40px 60px;
@@ -265,25 +279,25 @@ section {
     margin-top: 0;
 }
 
-#contact .col-1-2 {}
-
-#contact .col-1-2 address {
+#contact address {
     font-style: normal;
     margin: auto;
 }
 
-#contact .col-1-2 address a {
+#contact address a {
     color: #1ac056;
     text-decoration: none;
     transition: all .3s;
 }
 
-#contact .col-1-2 address a:hover {
+#contact address a:hover {
     color: #fff;
 }
-form{
+
+form {
     padding-top: 60px;
 }
+
 form input[type='text'],
 form input[type='email'],
 form textarea {
@@ -300,7 +314,7 @@ form textarea {
 
 form input[type='text']:focus,
 form input[type='email']:focus,
-form textarea:focus{
+form textarea:focus {
     background-color: #4c6f8d;
 }
 
@@ -309,17 +323,18 @@ form input[type="submit"] {
     text-transform: uppercase;
     height: auto;
     cursor: pointer;
-    padding:10px;
+    padding: 10px;
     color: #fff;
     border: 0;
     float: right;
     transition: all .3s;
-    
 }
-form input[type="submit"]:hover{
+
+form input[type="submit"]:hover {
     background-color: #fff;
     color: #1ac056;
 }
+
 .social-icons {
     margin-top: 30px;
 }
@@ -345,8 +360,11 @@ form input[type="submit"]:hover{
 
 
 /* Contact section - start*/
+
+
 /* Footer - start*/
-footer{
+
+footer {
     margin-top: 0;
     font-size: 1.2em;
     padding: 5px;
@@ -354,10 +372,11 @@ footer{
     background-color: #152e40;
     padding-left: 55px;
 }
-footer p{
+
+footer p {
     text-align: left;
     margin: 0;
 }
 
-/* Footer - stop*/
 
+/* Footer - stop*/
